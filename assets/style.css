@@ -1,0 +1,176 @@
+:root {
+    --purple: #79025B;
+    --pink: #D67AB1;
+    --pastelpink: #E7B1D0;
+    --white: #FDF7FA;
+    --paleblue: #A8DCD9;
+    --yellow: #FFBA08;
+    --blue: #3F88C5;
+    --brightpink: #E43F6F;
+    --midpurple: #BE3E82;
+    --midpink: #F56476;
+    --green: #197278;
+  }
+
+* {
+    
+    box-sizing: border-box;
+
+  }
+  
+  body {
+    font-family: 'Sanchez', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    padding: 80px;
+    text-align: center;
+    background: var(--blue);
+    color: var(--purple);
+    font-size: xx-large;
+    font-family: 'Zen Tokyo Zoo', Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pastelpink);
+    justify-content: flex-end;
+  }
+  
+
+  nav a {
+    color: var(--purple);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Sanchez';
+  }
+  /* mouse over link */
+a:hover {
+    color: var(--pastelpink);
+  }
+  
+  /* selected link */
+  a:active {
+    color: var(--blue);
+  }
+  .hero-image {
+      display:none;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  aside {
+    flex: 1;
+    background-color: var(--midpink);
+    padding: 20px;
+  }
+  
+  section {
+    flex: 3;
+    background-color: var(--midpurple);
+    padding: 20px;
+    color: var(--white);
+  }
+  
+  .side-img {
+    background-color: var(--paleblue);
+    width: 50%;
+    padding: 20px 10px;
+    height: 200px;
+    border: 1px solid var(--pink);
+    border-radius: 5%;
+    
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid var(--brightpink);
+    float: left;
+    width: 180px;
+
+  }
+  /*mouse over image*/
+  div.gallery:hover {
+    border: 10px solid var(--purple);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--paleblue);
+    color: var(--purple);
+  }
+  
+  @media screen and (min-width: 768px) {
+
+    main {
+        display:flex;
+        flex-direction: column;
+    }
+    nav {
+      flex-direction: row;
+    }
+   
+    
+    /* The hero image */
+    .hero-image {
+
+        background-size: cover;
+      /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/pinkballoons.jpg");
+    
+      /* Set a specific height */
+      
+    
+      /* Position and center the image to scale nicely on all screens */
+      background-position: center;
+      background-repeat: no-repeat;
+     
+      background-color: var(--pastelpink);
+      
+    
+    }
+    
+    /* Place text in the middle of the image */
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+   
+    aside {
+        flex-direction: row;
+      order: 3;
+      background-image: ;
+    }
+
+    header {
+      background: var(--blue);
+    }
+  
+    nav,
+    footer {
+      background-color: var(--paleblue);
+    }
+  }
+  
+  

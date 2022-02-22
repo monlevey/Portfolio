@@ -56,8 +56,12 @@ a:hover {
   a:active {
     color: var(--blue);
   }
-  .hero-image {
-      display:none;
+
+
+  aside {
+    background-color: var(--midpink);
+    padding: 20px;
+    text-align: end;
   }
   main {
     display: flex;
@@ -65,37 +69,39 @@ a:hover {
     flex-direction: column;
   }
   
-  aside {
-    flex: 1;
-    background-color: var(--midpink);
-    padding: 20px;
-  }
   
   section {
-    flex: 3;
     background-color: var(--midpurple);
     padding: 20px;
     color: var(--white);
   }
   
-  .side-img {
+  article {
+      padding: 20px;
+      align-content: center;
+      padding: 20px;
+      background-image: url(../assets/images/pinkballoons.jpg) ;
+      background-size:contain;
+      background-repeat: repeat;
+      flex-wrap:wrap;
+  }
+  .WedHub {
     background-color: var(--paleblue);
-    width: 50%;
-    padding: 20px 10px;
-    height: 200px;
-    border: 1px solid var(--pink);
-    border-radius: 5%;
+    text-align: right;
+    color: var(--purple);
     
   }
 
   div.gallery {
     margin: 5px;
-    border: 1px solid var(--brightpink);
-    float: left;
-    width: 180px;
+    padding: 20px 20px 20px 20px;
+    border: 3px solid var(--brightpink);
+    float: center;
+    width: 300px;
+    height: auto;
 
   }
-  /*mouse over image*/
+
   div.gallery:hover {
     border: 10px solid var(--purple);
   }
@@ -104,9 +110,13 @@ a:hover {
     width: 100%;
     height: auto;
   }
+
+  .Contactme {
+    text-align: center;
+    text-decoration: wavy;
+    list-style: none;
+  }
   
-
-
   footer {
     padding: 20px;
     text-align: center;
@@ -116,51 +126,19 @@ a:hover {
   
   @media screen and (min-width: 768px) {
 
-    main {
-        display:flex;
-        flex-direction: column;
-    }
+    
     nav {
       flex-direction: row;
     }
-   
-    
-    /* The hero image */
-    .hero-image {
+  
 
-        background-size: cover;
-      /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/pinkballoons.jpg");
-    
-      /* Set a specific height */
-      
-    
-      /* Position and center the image to scale nicely on all screens */
-      background-position: center;
-      background-repeat: no-repeat;
-     
-      background-color: var(--pastelpink);
-      
-    
-    }
-    
-    /* Place text in the middle of the image */
-    .hero-text {
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-    }
-    .gallery {
-        flex-direction: column;
-    }
-   
-    aside {
-        flex-direction: row;
-      order: 3;
-      background-image: ;
+    article {
+      padding: 20px;
+      background-image: url(../assets/images/pinkballoons.jpg) ;
+      background-size:contain;
+      background-repeat: repeat;
+      background-color: var(--yellow);
+      display:flex;
     }
 
     header {
@@ -171,6 +149,12 @@ a:hover {
     footer {
       background-color: var(--paleblue);
     }
+
+    div.gallery {
+      flex-direction: row;
+      justify-content:center;
   }
+
+  
   
   

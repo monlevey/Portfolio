@@ -31,6 +31,12 @@
     font-size: xx-large;
     font-family: 'Zen Tokyo Zoo', Georgia, 'Times New Roman', Times, serif;
   }
+
+  .top {
+    position: relative;
+    height: 10px;
+    background: linear-gradient(141deg, cyan 0%, rebeccapurple 40%, deeppink 90%);
+  }
   
   nav {
     display: flex;
@@ -46,6 +52,10 @@
     text-decoration: none;
     text-align: center;
     font-family: 'Sanchez';
+  }
+
+  a {
+    text-decoration: none;
   }
   /* mouse over link */
     a:hover {
@@ -102,12 +112,36 @@
     
   }
 
+  .Majorproject {
+    margin: 5px;
+    padding: 20px 20px 20px 20px;
+    border: 3px solid var(--brightpink);
+    justify-items: center;
+    align-items: stretch;
+    text-align: center;
+    width: 700px;
+    height: auto;
+
+  }
+  .Majorproject img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Majorproject:hover {
+    border: 10px solid var(--blue);
+  }
+  
+
   div.gallery {
     margin: 5px;
     padding: 20px 20px 20px 20px;
     border: 3px solid var(--brightpink);
     justify-items: center;
     align-items: stretch;
+    text-align: center;
     width: 300px;
     height: auto;
 
@@ -120,6 +154,8 @@
   div.gallery img {
     width: 100%;
     height: auto;
+    align-items: center;
+    justify-content: center;
   }
 
   .Contactme {
@@ -131,9 +167,14 @@
     margin: 5px;
     padding: 20px 20px 20px 20px;
     border: 3px solid var(--brightpink);
-    width: auto;
-    height: 200px;
+    width: 300px;
+    height: auto;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  div.center:hover {
+    border: 10px solid var(--green);
   }
 
   

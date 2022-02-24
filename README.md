@@ -1,19 +1,20 @@
-# Accessiblity Semantic Project
-## Description
-The project aims to improve accessiblity of the Horiseon website, whilst mirroring the original mock up. The code has been re-structured into conventional semantic HTML and the CSS stylesheet has been condensed to mirror that.  
+# Mon Levey Portfolio
 
-Code was refactored to better learn semantic HTML and how to condense CSS.
+## Description
+The project aims to provide the user with information about Monique Levey. It involved linking previous projects, contact information and images to the website. The website needed to be accessible and responsive. 
+
+Code was created to better learn semantic HTML and use advanced CSS.
 
 ***
 
 ## Demo
-[Horiseon website demo] <img src="../Bootcamp-Homework/Horiseon website demo.png"/> 
+![Monique Portfolio Website Demo](../Portfolio/assets/images/Mon Levey.gif)
 
-The Horiseon Website will render as the above image displays. If the user requires a screen reader, the website is optimized with alt tags.
+My Portfolio website will render as the above gif displays. It is reponsive to both mobile and desktop viewing.
 
 
 ## Live Link
-You can visit this site at [Mon Levey's GitHub Pages](https://monlevey.github.io/WedHub/)
+You can visit this site at [Mon Levey's GitHub Pages](https://monlevey.github.io/Portfolio/)
 
 <img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
 

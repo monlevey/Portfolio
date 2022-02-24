@@ -56,6 +56,7 @@
 
   a {
     text-decoration: none;
+    color: var(--purple)
   }
   /* mouse over link */
     a:hover {
@@ -177,7 +178,6 @@
     border: 10px solid var(--green);
   }
 
-  
   @media screen and (min-width: 768px) {
 
     header {
@@ -188,7 +188,6 @@
       flex-direction: row;
     }
   
-
     article {
       padding: 20px;
       background-image: url(../assets/images/pinkballoons.jpg) ;

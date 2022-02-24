@@ -1,3 +1,4 @@
+/* Theme colours*/
 :root {
     --purple: #79025B;
     --pink: #D67AB1;
@@ -13,16 +14,14 @@
   }
 
 * {
-    
     box-sizing: border-box;
-
   }
-  
+  /*Font family added using google fonts*/
   body {
     font-family: 'Sanchez', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
   }
-  
+  /*Header has unique font*/
   header {
     padding: 80px;
     text-align: center;
@@ -31,13 +30,13 @@
     font-size: xx-large;
     font-family: 'Zen Tokyo Zoo', Georgia, 'Times New Roman', Times, serif;
   }
-
+/*Add rainbow line for effect*/
   .top {
     position: relative;
     height: 10px;
     background: linear-gradient(141deg, cyan 0%, rebeccapurple 40%, deeppink 90%);
   }
-  
+  /* Nav style is column for mobile */
   nav {
     display: flex;
     flex-direction: column;
@@ -67,20 +66,20 @@
     a:active {
       color: var(--blue);
   }
-
+/* flex wrap elements for accessible viewing*/
   main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
   
-  
+  /*sections for breaking up content - includes clear header*/
   section {
     background-color: var(--midpurple);
     padding: 20px;
     color: var(--white);
   }
-  
+  /*background image for content and images- flex. Background colour for slow browser*/
   article {
       padding: 20px;
       align-content: center;
@@ -88,6 +87,7 @@
       background-image: url(../assets/images/pinkballoons.jpg) ;
       background-size:contain;
       background-repeat: repeat;
+      background-color: var(--yellow);
       flex-wrap:wrap;
       display:flex;
       justify-content: center;
@@ -105,14 +105,14 @@
     font-size: xx-large;
     font-family: 'Palette Mosaic', 'Lucida Sans','Lucida Grande', 'Lucida Sans Unicode', sans-serif;
   }
-
+/*change colour for main project*/
   .WedHub {
     background-color: var(--paleblue);
     text-align: right;
     color: var(--purple);
     
   }
-
+/*larger image and content section for main project - no larger than mobile screen width*/
   .Majorproject {
     margin: 5px;
     padding: 20px 20px 20px 20px;
@@ -120,7 +120,7 @@
     justify-items: center;
     align-items: stretch;
     text-align: center;
-    width: 700px;
+    width: 300px;
     height: auto;
 
   }
@@ -131,11 +131,12 @@
     justify-content: center;
   }
 
+/*change colour for main project*/
   .Majorproject:hover {
     border: 10px solid var(--blue);
   }
   
-
+/* matching card styles for other projects and content*/
   div.gallery {
     margin: 5px;
     padding: 20px 20px 20px 20px;
@@ -143,8 +144,9 @@
     justify-items: center;
     align-items: stretch;
     text-align: center;
-    width: 300px;
+    width: 200px;
     height: auto;
+    font-size: x-small;
 
   }
 
@@ -158,7 +160,7 @@
     align-items: center;
     justify-content: center;
   }
-
+/*Contact info*/
   .Contactme {
     text-align: center;
     background-color: var(--green);
@@ -174,32 +176,25 @@
     align-items: center;
     justify-content: center;
   }
+
   div.center:hover {
     border: 10px solid var(--green);
   }
+
+/*Designed for mobile in initial build - adjustments for desktops*/
 
   @media screen and (min-width: 768px) {
 
     header {
       background: var(--blue);
     }
-
+/*horizontal header in desktop display*/
     nav {
       flex-direction: row;
-    }
-  
-    article {
-      padding: 20px;
-      background-image: url(../assets/images/pinkballoons.jpg) ;
-      background-size:contain;
-      background-repeat: repeat;
-      background-color: var(--yellow);
-      display:flex;
     }
 
     section {
       flex-wrap: wrap;
-      
     }
   
     nav,
@@ -207,9 +202,17 @@
       background-color: var(--paleblue);
     }
 
+    /*larger image for main project on desktop*/
+    .Majorproject {
+      width: 700px;
+      height: auto;
+    }
+/*larger font and width for desktop*/
     div.gallery {
       flex-direction: row;
       justify-content: center;
+      width: 300px;
+      font-size: medium;
     }
     .Contactme {
       flex-direction: column;

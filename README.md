@@ -8,7 +8,7 @@ Code was created to better learn semantic HTML and use advanced CSS.
 ***
 
 ## Demo
-![Monique Portfolio Website Demo](../Portfolio/assets/images/Mon Levey.gif)
+![Monique Portfolio Website Demo](Mon.Levey.gif)
 
 My Portfolio website will render as the above gif displays. It is reponsive to both mobile and desktop viewing.
 

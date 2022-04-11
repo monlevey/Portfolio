@@ -188,7 +188,7 @@
     header {
       background: var(--blue);
     }
-/*horizontal header in desktop display*/
+/*horizontal nav bar in desktop display*/
     nav {
       flex-direction: row;
     }
